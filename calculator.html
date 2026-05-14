@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+  <p class="js-result result"></p>
+  <p>
+    <button onclick="
+  updateCalculation('1');
+  " class="cal grey-btn">1</button>
+
+    <button onclick="
+  updateCalculation('2');
+  " class="cal grey-btn">2</button>
+
+    <button onclick="
+  updateCalculation('3');
+  " class="cal grey-btn">3</button>
+
+    <button onclick="
+  updateCalculation(' + ');
+  " class="cal ylw-btn">+</button>
+  </p>
+  <p>
+    <button onclick="
+  updateCalculation('4');
+  " class="cal grey-btn">4</button>
+
+    <button onclick="
+  updateCalculation('5');
+  " class="cal grey-btn">5</button>
+
+    <button onclick="
+  updateCalculation('6');
+  " class="cal grey-btn">6</button>
+
+    <button onclick="
+  updateCalculation(' - ');
+  " class="cal ylw-btn">-</button>
+  </p>
+  <p>
+    <button onclick="
+  updateCalculation('7');
+  " class="cal grey-btn">7</button>
+
+    <button onclick="
+  updateCalculation('8');
+  " class="cal grey-btn">8</button>
+
+    <button onclick="
+  updateCalculation('9');
+  " class="cal grey-btn">9</button>
+
+    <button onclick="
+  updateCalculation(' * ');
+  " class="cal ylw-btn">*</button>
+  </p>
+  <p>
+    <button onclick="
+  updateCalculation('0');
+  " class="cal grey-btn">0</button>
+
+    <button onclick="
+  updateCalculation('.');
+  " class="cal grey-btn">.</button>
+
+    <button onclick="
+  calculation = eval(calculation);
+  display();
+  localStorage.setItem('calculation', calculation)
+  " class="cal grey-btn">=</button>
+
+    <button onclick="
+  updateCalculation(' / ');
+  " class="cal ylw-btn">/</button>
+  </p>
+
+  <p>
+    <button onclick="
+      calculation='';
+      display();
+      localStorage.removeItem('calculation');
+      localStorage.setItem('calculation', calculation)
+    " class="cal grey-btn clear">Clear</button>
+  </p>
+  <script src="calculator.js"></script>
+</body>
+
+</html>

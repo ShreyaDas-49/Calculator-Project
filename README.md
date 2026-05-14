@@ -27,11 +27,3 @@ This project was created to practice:
 <li>Building interactive web applications</li>
 </ul>
 
-
-
-🔗 Ideal For
-Frontend development beginners
-JavaScript practice projects
-Portfolio and GitHub showcase projects
-
-Tools
